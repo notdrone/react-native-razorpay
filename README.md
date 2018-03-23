@@ -1,7 +1,7 @@
 # react-native-razorpay
 [![npm](https://img.shields.io/npm/l/express.svg)]()
 
-[![NPM](https://nodei.co/npm/react-native-razorpay.png?downloads=true)](https://nodei.co/npm/react-native-razorpay/)
+[![NPM](https://nodei.co/npm/react-native-razorpay-expokit.png?downloads=true)](https://nodei.co/npm/react-native-razorpay/)
 
 React Native wrapper around our Android and iOS mobile SDKs
 
@@ -28,13 +28,13 @@ Run the following on terminal from your project directory:
 **Note**: For Windows users, run this on Git Bash instead of Command Prompt. You can download Git for Windows [here](https://github.com/git-for-windows/git/releases/latest).
 
 ```bash
-$ npm i react-native-razorpay --save
+$ npm i react-native-razorpay-expokit --save
 ```
 
 ### Automatic installation
 
 ```bash
-$ react-native link react-native-razorpay
+$ react-native link react-native-razorpay-expokit
 ```
 
 ##### Manual installation
