@@ -1,5 +1,5 @@
 {
-  "name": "react-native-razorpay-expo",
+  "name": "react-native-razorpay-expokit",
   "version": "2.0.1",
   "description": "React Native wrapper for Razorpay when using expokit",
   "main": "RazorpayCheckout.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/notdrone/react-native-razorpay-expo.git"
+    "url": "git+https://github.com/notdrone/react-native-razorpay-expokit.git"
   },
   "dependencies": {},
   "peerDependencies": {

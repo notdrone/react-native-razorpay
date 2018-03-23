@@ -1,4 +1,4 @@
-# react-native-razorpay
+# react-native-razorpay-expokit
 [![npm](https://img.shields.io/npm/l/express.svg)]()
 
 [![NPM](https://nodei.co/npm/react-native-razorpay-expokit.png?downloads=true)](https://nodei.co/npm/react-native-razorpay/)
@@ -55,7 +55,7 @@ link iOS SDK as explained in the previous section:
 
 1. Import RazorpayCheckout module to your component:
     ```js
-    import RazorpayCheckout from 'react-native-razorpay';
+    import RazorpayCheckout from 'react-native-razorpay-expokit';
     ```
 
 2. Call `RazorpayCheckout.open` method with the payment `options`. The method
