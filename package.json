@@ -1,6 +1,6 @@
 {
   "name": "react-native-razorpay-expokit",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "React Native wrapper for Razorpay when using expokit",
   "main": "RazorpayCheckout.js",
   "scripts": {

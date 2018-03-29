@@ -1,4 +1,5 @@
 # react-native-razorpay-expokit
+
 [![npm](https://img.shields.io/npm/l/express.svg)]()
 
 [![NPM](https://nodei.co/npm/react-native-razorpay-expokit.png?downloads=true)](https://nodei.co/npm/react-native-razorpay/)
@@ -13,9 +14,6 @@ React Native wrapper around our Android and iOS mobile SDKs
 
 To know more about Razorpay payment flow and steps involved, read up here:
 <https://docs.razorpay.com/docs>
-
-
-
 
 ## Installation
 
@@ -54,45 +52,22 @@ link iOS SDK as explained in the previous section:
 ### Steps
 
 1. Import RazorpayCheckout module to your component:
-    ```js
-    import RazorpayCheckout from 'react-native-razorpay-expokit';
-    ```
+
+   ```js
+   import RazorpayCheckout from 'react-native-razorpay-expokit'
+   ```
 
 2. Call `RazorpayCheckout.open` method with the payment `options`. The method
-returns a **JS Promise** where `then` part corresponds to a successful payment
-and the `catch` part corresponds to payment failure.
-    ```js
-    <TouchableHighlight onPress={() => {
-      var options = {
-        description: 'Credits towards consultation',
-        image: 'https://i.imgur.com/3g7nmJC.png',
-        currency: 'INR',
-        key: 'rzp_test_1DP5mmOlF5G5ag',
-        amount: '5000',
-        name: 'foo',
-        prefill: {
-          email: 'void@razorpay.com',
-          contact: '9191919191',
-          name: 'Razorpay Software'
-        },
-        theme: {color: '#F37254'}
-      }
-      RazorpayCheckout.open(options).then((data) => {
-        // handle success
-        alert(`Success: ${data.razorpay_payment_id}`);
-      }).catch((error) => {
-        // handle failure
-        alert(`Error: ${error.code} | ${error.description}`);
-      });
-    }}>
-    ```
+   returns a **JS Promise** where `then` part corresponds to a successful payment
+   and the `catch` part corresponds to payment failure.
+   `` js <TouchableHighlight onPress={() => { var options = { description: 'Credits towards consultation', image: 'https://i.imgur.com/3g7nmJC.png', currency: 'INR', key: 'rzp_test_1DP5mmOlF5G5ag', amount: '5000', name: 'foo', prefill: { email: 'void@razorpay.com', contact: '9191919191', name: 'Razorpay Software' }, theme: {color: '#F37254'} } RazorpayCheckout.open(options).then((data) => { // handle success alert(`Success: ${data.razorpay_payment_id}`); }).catch((error) => { // handle failure alert(`Error: ${error.code} | ${error.description}`); }); }}> ``
 
 A descriptive [list of valid options for checkout][options] is available (under
 Manual Checkout column).
 
 ## Things to be taken care:
 
-- The react native plugin is wrapper around native SDK, so it doesn't work with the tools like expo which doesn't support native modules.
+* The react native plugin is wrapper around native SDK, so it doesn't work with the tools like expo which doesn't support native modules.
 
 ## Contributing
 
@@ -101,18 +76,18 @@ See the [CONTRIBUTING] document. Thank you, [contributors]!
 ## License
 
 react-native-razorpay is Copyright (c) 2016 Razorpay Software Pvt. Ltd.
-It is distributed under [the MIT License][LICENSE].
+It is distributed under [the MIT License][license].
 
 We ♥ open source software!
 See [our other supported plugins / SDKs][integrations]
 or [contact us][contact] to help you with integrations.
 
 [contact]: mailto:integrations@razorpay.com?subject=Help%20with%20React%20Native "Send us a mail"
-[CONTRIBUTING]: CONTRIBUTING.md "Our contributings guidelines"
+[contributing]: CONTRIBUTING.md "Our contributings guidelines"
 [contributors]: https://github.com/razorpay/react-native-razorpay/graphs/contributors "List of contributors"
 [index.js]: example/index.js "index.js"
 [integrations]: https://razorpay.com/integrations "List of our integrations"
 [ios-docs]: https://docs.razorpay.com/v1/page/ios-integration "Documentation for the iOS Integration"
-[LICENSE]: /LICENSE "MIT License"
+[license]: /LICENSE "MIT License"
 [options]: https://docs.razorpay.com/docs/checkout-form#checkout-fields "Checkout Options"
 [wiki]: https://github.com/razorpay/react-native-razorpay/wiki/Manual-Installation
